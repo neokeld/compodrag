@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { Grommet } from 'grommet';
 
+import { AppBar } from './AppBar'; 
+import { AppBarContent } from './AppBarContent';
+
 const theme = {
   global: {
+    colors: {
+      brand: 'rgb(125, 76, 219)',
+    },
     font: {
       family: 'Montserrat',
       size: '14px',
@@ -15,19 +21,9 @@ class App extends Component {
   render() {
     return (
       <Grommet theme={theme}>
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <AppBar>
+	    <AppBarContent />
+	</AppBar>
       </Grommet>
     );
   }
