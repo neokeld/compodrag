@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Grommet } from 'grommet';
+import { Grommet, Box } from 'grommet';
 
 import { AppBar } from './AppBar'; 
 import { AppBarContent } from './AppBarContent';
+import { Body } from './Body';
+import { SideBar } from './SideBar';
 
 const theme = {
   global: {
@@ -20,10 +22,16 @@ const theme = {
 class App extends Component {
   render() {
     return (
-      <Grommet theme={theme}>
-        <AppBar>
+      <Grommet theme={theme} full>
+	<Box fill>
+          <AppBar>
 	    <AppBarContent />
-	</AppBar>
+	  </AppBar>
+          <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
+	    <Body />
+	    <SideBar />
+          </Box>
+	</Box>
       </Grommet>
     );
   }

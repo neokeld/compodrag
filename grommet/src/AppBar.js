@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grommet } from 'grommet';
+import { Box } from 'grommet';
 
 export const AppBar = (props) => (
   <Box
