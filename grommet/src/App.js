@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
+import { Grommet } from 'grommet';
+
+const theme = {
+  global: {
+    font: {
+      family: 'Montserrat',
+      size: '14px',
+      height: '20px'
+    }
+  }
+};
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Grommet theme={theme}>
         <header className="App-header">
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +28,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-      </div>
+      </Grommet>
     );
   }
 }
