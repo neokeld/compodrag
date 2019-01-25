@@ -2,7 +2,9 @@
 
 ## Presentation
 
-Sandbox project to test [Blueprint](https://github.com/palantir/blueprint) React Components lib.
+Sandbox project to test some React Components libraries:
+* [Blueprint](https://github.com/palantir/blueprint)
+* [Grommet](https://v2.grommet.io)
 
 ## Thanks
 
