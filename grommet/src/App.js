@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grommet, Box } from 'grommet';
+import { Grommet, Box, ResponsiveContext } from 'grommet';
 
 import { AppBar } from './AppBar'; 
 import { AppBarContent } from './AppBarContent';
@@ -23,15 +23,21 @@ class App extends Component {
   render() {
     return (
       <Grommet theme={theme} full>
-	<Box fill>
-          <AppBar>
-	    <AppBarContent />
-	  </AppBar>
-          <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
-	    <Body />
-	    <SideBar />
-          </Box>
-	</Box>
+	<ResponsiveContext.Consumer>
+	{size => (
+	  <Box fill>
+            <AppBar>
+	      <AppBarContent />
+	    </AppBar>
+            <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
+	      <Body />
+	      {size !== 'small' && (
+	        <SideBar />
+	      )}
+            </Box>
+	  </Box>
+	)}
+	</ResponsiveContext.Consumer>
       </Grommet>
     );
   }
