@@ -3,12 +3,12 @@
 ## Presentation
 
 Sandbox project to test some React Components libraries:
-* [Blueprint](https://github.com/palantir/blueprint)
-* [Grommet](https://v2.grommet.io)
-* [Evergreen](https://github.com/segmentio/evergreen)
 * [Atlaskit](https://bitbucket.org/atlassian/atlaskit-mk-2)
-* [Semantic-ui](https://github.com/Semantic-Org/Semantic-UI)
+* [Blueprint](https://github.com/palantir/blueprint)
+* [Evergreen](https://github.com/segmentio/evergreen)
+* [Grommet](https://github.com/grommet/grommet)
 * [Rebass](https://github.com/rebassjs/rebass)
+* [Semantic-ui](https://github.com/Semantic-Org/Semantic-UI)
 
 ## Thanks
 
