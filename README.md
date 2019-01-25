@@ -8,6 +8,7 @@ Sandbox project to test some React Components libraries:
 * [Evergreen](https://github.com/segmentio/evergreen)
 * [Atlaskit](https://bitbucket.org/atlassian/atlaskit-mk-2)
 * [Semantic-ui](https://github.com/Semantic-Org/Semantic-UI)
+* [Rebass](https://github.com/rebassjs/rebass)
 
 ## Thanks
 
