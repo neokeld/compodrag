@@ -10,6 +10,10 @@ Sandbox project to test some React Components libraries:
 * [Rebass](https://github.com/rebassjs/rebass)
 * [Semantic-ui](https://github.com/Semantic-Org/Semantic-UI)
 
+## Notes
+
+Simple grid system for React: [Gx](https://github.com/jxnblk/gx)
+
 ## Thanks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
