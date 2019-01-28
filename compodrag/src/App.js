@@ -5,7 +5,7 @@ import { Main } from './pages/Main';
 import { Atlaskit } from './pages/Atlaskit';
 import { Blueprint } from './pages/Blueprint';
 import { Evergreen } from './pages/Evergreen';
-import { Grommet } from './pages/Grommet';
+import { GrommetPage } from './pages/GrommetPage';
 import { Rebass } from './pages/Rebass';
 import { Semanticui } from './pages/Semanticui';
 
@@ -18,7 +18,7 @@ const App = () => (
 	<Route path="/atlaskit" component={Atlaskit} />
         <Route path="/blueprint" component={Blueprint} />
         <Route path="/evergreen" component={Evergreen} />
-	<Route path="/grommet" component={Grommet} />
+	<Route path="/grommet" component={GrommetPage} />
         <Route path="/rebass" component={Rebass} />
         <Route path="/semanticui" component={Semanticui} />
       </Switch>
