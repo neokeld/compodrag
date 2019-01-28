@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Image, Text } from 'grommet';
+import { Link } from 'react-router-dom';
 
 export const ChooseCollection = () => (
 <>
@@ -25,8 +26,10 @@ export const ChooseCollection = () => (
 <Box fill>
    <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
      <Box flex width='medium' height='medium' background='light-2'>
-       <Image src='grommet-2-open-theme.png' fit='contain' alt='grommet ui example'/>
-       <Text alignSelf='center'>Grommet</Text>
+       <Link to='/grommet'>
+         <Image src='grommet-2-open-theme.png' fit='contain' alt='grommet ui example'/>
+         <Text alignSelf='center'>Grommet</Text>
+       </Link>
      </Box>
      <Box flex width='medium' height='medium'>
        <Image src='r.png' fit='contain' alt='rebass ui example'/>

@@ -1,26 +1,18 @@
-import React, { Component } from 'react';
-import { Grommet } from 'grommet';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { ChooseCollection } from './ChooseCollection';
+import { Main } from './pages/Main';
+import { Grommet } from './pages/Grommet';
 
-const theme = {
-  global: {
-    font: {
-      family: 'Montserrat',
-      size: '14px',
-      height: '20px',
-    },
-  },
-};
-
-class App extends Component {
-  render() {
-    return (
-      <Grommet theme={theme}>
-          <ChooseCollection />
-      </Grommet>
-    );
-  }
-}
+const App = () => (
+  <Router>
+    <>
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/grommet" component={Grommet} />
+      </Switch>
+    </>
+  </Router>
+);
 
 export default App;
